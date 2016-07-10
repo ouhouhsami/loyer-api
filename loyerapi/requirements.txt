@@ -1,0 +1,7 @@
+Django==1.9.7
+django-adaptors==0.2.5
+django-crispy-forms==1.6.0
+django-filter==0.13.0
+djangorestframework==3.3.3
+drfdocs==0.0.11
+wsgiref==0.1.2
