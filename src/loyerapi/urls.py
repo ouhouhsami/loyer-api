@@ -16,6 +16,7 @@ class LoyerSerializer(serializers.HyperlinkedModelSerializer):
         		  'agglomeration_description', 'loyer_median',
         		  'loyer_moyen', 'loyer_moyen')
 
+
 class LoyerViewSet(viewsets.ModelViewSet):
     queryset = Loyer.objects.all()
     serializer_class = LoyerSerializer
@@ -24,6 +25,7 @@ class LoyerViewSet(viewsets.ModelViewSet):
 class AgglomerationDescriptionSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = AgglomerationDescription
+
 
 class AgglomerationDescriptionViewSet(viewsets.ModelViewSet):
     queryset = AgglomerationDescription.objects.all()
@@ -38,11 +40,11 @@ class AgglomerationViewSet(viewsets.ModelViewSet):
     queryset = Agglomeration.objects.all()
     serializer_class = AgglomerationSerializer
 
-# , , ,
 
 class HousingTypeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = HousingType
+
 
 class HousingTypeViewSet(viewsets.ModelViewSet):
     queryset = HousingType.objects.all()
@@ -53,6 +55,7 @@ class ConstructionPeriodSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = ConstructionPeriod
 
+
 class ConstructionPeriodViewSet(viewsets.ModelViewSet):
     queryset = ConstructionPeriod.objects.all()
     serializer_class = ConstructionPeriodSerializer
@@ -62,6 +65,7 @@ class RenterSenioritySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = RenterSeniority
 
+
 class RenterSeniorityViewSet(viewsets.ModelViewSet):
     queryset = RenterSeniority.objects.all()
     serializer_class = RenterSenioritySerializer
@@ -70,6 +74,7 @@ class RenterSeniorityViewSet(viewsets.ModelViewSet):
 class NumberOfRoomsSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = NumberOfRooms
+
 
 class NumberOfRoomsViewSet(viewsets.ModelViewSet):
     queryset = NumberOfRooms.objects.all()
