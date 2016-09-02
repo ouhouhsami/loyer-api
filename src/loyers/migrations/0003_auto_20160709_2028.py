@@ -12,16 +12,28 @@ def convert_type(apps, schema_editor):
         loyer.Data_year = int(loyer.Data_year)
         if loyer.loyer_1_decile is not '':
             loyer.loyer_1_decile = float(loyer.loyer_1_decile.replace(',', '.'))
+        else:
+            loyer.loyer_1_decile = None
         if loyer.loyer_1_quartile is not '':
             loyer.loyer_1_quartile = float(loyer.loyer_1_quartile.replace(',', '.'))
+        else:
+            loyer.loyer_1_quartile = None
         if loyer.loyer_median is not '':
             loyer.loyer_median = float(loyer.loyer_median.replace(',', '.'))
+        else:
+            loyer.loyer_median = None
         if loyer.loyer_3_quartile is not '':
             loyer.loyer_3_quartile = float(loyer.loyer_3_quartile.replace(',', '.'))
+        else:
+            loyer.loyer_3_quartile = None
         if loyer.loyer_9_decile is not '':
             loyer.loyer_9_decile = float(loyer.loyer_9_decile.replace(',', '.'))
+        else:
+            loyer.loyer_9_decile = None
         if loyer.loyer_moyen is not '':
             loyer.loyer_moyen = float(loyer.loyer_moyen.replace(',', '.'))
+        else:
+            loyer.loyer_moyen = None
         loyer.save()
 
 
