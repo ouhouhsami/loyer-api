@@ -13,27 +13,27 @@ def convert_type(apps, schema_editor):
         if loyer.loyer_1_decile is not '':
             loyer.loyer_1_decile = float(loyer.loyer_1_decile.replace(',', '.'))
         else:
-            loyer.loyer_1_decile = None
+            loyer.loyer_1_decile = 0
         if loyer.loyer_1_quartile is not '':
             loyer.loyer_1_quartile = float(loyer.loyer_1_quartile.replace(',', '.'))
         else:
-            loyer.loyer_1_quartile = None
+            loyer.loyer_1_quartile = 0
         if loyer.loyer_median is not '':
             loyer.loyer_median = float(loyer.loyer_median.replace(',', '.'))
         else:
-            loyer.loyer_median = None
+            loyer.loyer_median = 0
         if loyer.loyer_3_quartile is not '':
             loyer.loyer_3_quartile = float(loyer.loyer_3_quartile.replace(',', '.'))
         else:
-            loyer.loyer_3_quartile = None
+            loyer.loyer_3_quartile = 0
         if loyer.loyer_9_decile is not '':
             loyer.loyer_9_decile = float(loyer.loyer_9_decile.replace(',', '.'))
         else:
-            loyer.loyer_9_decile = None
+            loyer.loyer_9_decile = 0
         if loyer.loyer_moyen is not '':
             loyer.loyer_moyen = float(loyer.loyer_moyen.replace(',', '.'))
         else:
-            loyer.loyer_moyen = None
+            loyer.loyer_moyen = 0
         loyer.save()
 
 
